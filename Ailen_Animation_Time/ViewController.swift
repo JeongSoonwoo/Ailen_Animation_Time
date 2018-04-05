@@ -29,6 +29,7 @@ class ViewController: UIViewController {
         if playing == false {
             timer.invalidate()
             playing = true
+            
         
         } else if playing == true {
               timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(ViewController.doAnimation), userInfo: nil, repeats: true)
